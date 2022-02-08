@@ -1,0 +1,9 @@
+.iconBorder {
+    border: 19px solid rgb(255 0 0 / 81%);
+    border-radius: 83%;
+    padding: 4%;
+    width: 69px;
+    margin: 5%;
+    background-color: rgba(245, 245, 245, 0.76);
+}
+
