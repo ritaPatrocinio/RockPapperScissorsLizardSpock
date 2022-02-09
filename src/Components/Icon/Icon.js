@@ -5,7 +5,7 @@ import './Icon.css';
 export function Icon({icon, setPlayersPick, setNewGame, newGame}){
     const selectPick = () => {
         setPlayersPick(() => icon);
-        setTimeout(setNewGame(() => false), 1000) 
+        setNewGame(() => false);
     } 
 
     return (

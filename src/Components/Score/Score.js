@@ -5,7 +5,7 @@ import logo from '../../images/logo-bonus.svg'
 
 export function Score({score}){
     return(
-        <div className="flex">
+        <div className="ScoreBorder">
             <img alt="" src={logo}></img>
             <div>
                 <p>Score</p>
