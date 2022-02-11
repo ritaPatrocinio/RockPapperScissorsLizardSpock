@@ -1,4 +1,4 @@
-Live version here: RockPapperScissorsLizardSpockn.surge.sh 
+Live version here: https://rockpapperscissorslizardspockn.surge.sh/ 
 
 
 # Getting Started with Create React App
