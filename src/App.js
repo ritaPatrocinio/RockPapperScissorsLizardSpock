@@ -4,6 +4,7 @@ import {IconList} from './Components/IconList/IconList';
 import { Icon } from './Components/Icon/Icon';
 import { Result } from './Components/Result/Result';
 import {useState, useEffect, useMemo} from 'react';
+import { PopUp } from './Components/PopUp/PopUp';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -11,6 +12,7 @@ function App() {
   const [housesPick, setHousesPick] = useState({});
   const [newGame, setNewGame] = useState(true);
   const [round, setRound] = useState(0);
+  const [showRules, setShowRules] = useState(false);
 
   const data = useMemo(() => [{id: 'lizard', img: './images/icon-lizard.svg', beats: ['spock', 'paper']}, 
   {id: 'paper', img: './images/icon-paper.svg', beats: ['spock', 'rock']}, 
@@ -22,6 +24,10 @@ function App() {
     const random = Math.floor(Math.random()*5);
     setHousesPick(() => data[random]);
   }, [round]);
+
+  const rules = () => {
+    setShowRules(() => true)
+  };
 
   return (
     <div className="App">
@@ -35,6 +41,9 @@ function App() {
         <Icon newGame={newGame} setNewGame={setNewGame} icon={housesPick}></Icon>
         </div>
       }
+      {showRules ? <PopUp setShowRules={setShowRules}></PopUp> : ''}
+      
+      <button className='Rules' onClick={rules}>Rules</button>
       
     </div>
   );

@@ -48,3 +48,16 @@
     margin: 5%;
     justify-content: center;
 }
+
+.Rules {
+  float: right;
+  cursor: pointer;
+  margin: 5%;
+  border-radius: 5px;
+  padding: 5px 1%;
+  color: white;
+  font-size: 70%;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid #ffffff96;
+}

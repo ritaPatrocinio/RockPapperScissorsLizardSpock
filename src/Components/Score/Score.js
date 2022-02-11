@@ -7,9 +7,9 @@ export function Score({score}){
     return(
         <div className="ScoreBorder">
             <img alt="" src={logo}></img>
-            <div>
-                <p>Score</p>
-                <p>{score}</p>
+            <div className="scoreDiv">
+                <p className="scTitle">Score</p>
+                <p className="score">{score}</p>
             </div>
         </div>
     )

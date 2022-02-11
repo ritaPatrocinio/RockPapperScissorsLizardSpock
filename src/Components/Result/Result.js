@@ -22,9 +22,9 @@ export function Result({setNewGame, playersPick, housesPick, setScore, round, se
 
     return (
             <div >
-            <p>{playerWin==='Draw'? playerWin : 'You ' + playerWin}</p>
+            <h2 className="result">{playerWin==='Draw'? playerWin : 'You ' + playerWin}</h2>
             {console.log('result:', playersPick, housesPick, round)}
-            <button onClick={() => {setNewGame(true); setRound((prev) => prev +1)}}>Play again</button>
+            <button className="again" onClick={() => {setNewGame(true); setRound((prev) => prev +1)}}>Play again</button>
            </div> 
            )
 }

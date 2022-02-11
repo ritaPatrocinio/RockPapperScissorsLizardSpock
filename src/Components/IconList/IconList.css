@@ -37,6 +37,7 @@
     padding: 9%;
     width: 60px;
     background-color: rgba(245, 245, 245, 0.76);
+    cursor: pointer;
 }
   .circle-container img:hover {
     filter: grayscale(0);

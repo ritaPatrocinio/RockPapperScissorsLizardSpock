@@ -6,6 +6,7 @@
     margin: 6%;
     background-color: rgba(245, 245, 245, 0.76);
     display: flex;
+    cursor: pointer;
 }
 
 
