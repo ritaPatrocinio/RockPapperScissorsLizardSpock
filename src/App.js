@@ -42,9 +42,7 @@ function App() {
         </div>
       }
       {showRules ? <PopUp setShowRules={setShowRules}></PopUp> : ''}
-      
       <button className='Rules' onClick={rules}>Rules</button>
-      
     </div>
   );
 }
