@@ -21,9 +21,8 @@ export function Result({setNewGame, playersPick, housesPick, setScore, round, se
     useEffect(() => {winner(housesPick); console.log('UE',playersPick, housesPick, round)}, [round])
 
     return (
-            <div >
+            <div className="resDiv" >
             <h2 className="result">{playerWin==='Draw'? playerWin : 'You ' + playerWin}</h2>
-            {console.log('result:', playersPick, housesPick, round)}
             <button className="again" onClick={() => {setNewGame(true); setRound((prev) => prev +1)}}>Play again</button>
            </div> 
            )

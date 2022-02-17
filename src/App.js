@@ -36,9 +36,15 @@ function App() {
       </header>
       {newGame ? <IconList newGame={newGame} setNewGame={setNewGame} setPlayersPick={setPlayersPick} icons={data}></IconList> 
       : <div className='flex'>
+        <div className='block'>
+        <h4>You picked</h4>
         <Icon newGame={newGame} setNewGame={setNewGame} icon={playersPick}></Icon>
+        </div>
         <Result setRound={setRound} round={round} newGame={newGame} playersPick={playersPick} housesPick={housesPick} score={score} setScore={setScore} setNewGame={setNewGame}></Result>
+        <div className='block'>
+        <h4>The house picked</h4>
         <Icon newGame={newGame} setNewGame={setNewGame} icon={housesPick}></Icon>
+        </div>
         </div>
       }
       {showRules ? <PopUp setShowRules={setShowRules}></PopUp> : ''}

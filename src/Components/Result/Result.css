@@ -1,7 +1,7 @@
 .result {
     text-transform: uppercase;
     color: whitesmoke;
-    font-size: 145%;
+    font-size: 35px;
 }
 
 .again {
@@ -14,4 +14,9 @@
     background: whitesmoke;
     border: 2px solid #ffffff96;
     text-transform: uppercase;
+}
+
+.resDiv {
+    width: 164px;
+    margin: 0 4%;
 }

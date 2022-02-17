@@ -10,8 +10,9 @@ export function Icon({icon, setPlayersPick, setNewGame, newGame}){
 
     return (
             <div onClick={() => newGame ? selectPick() : ''} style={{borderColor: icon.id==='lizard' ? '#03a9f4' : icon.id==='paper' ?
-             '#3f51b5' : icon.id==='rock' ? '#9c27b0' : icon.id==='spock' ? '#673ab7' : icon.id==='scissors' ? 'rgb(213 0 0)' : ''}} className="iconBorder">
-            <img alt={icon.id} src={require('../../' + icon.img.replace('./', ''))}></img>
+             '#3f51b5' : icon.id==='rock' ? '#9c27b0' : icon.id==='spock' ? '#673ab7' : icon.id==='scissors' ? 'rgb(213 0 0)' : ''}} 
+             className={newGame? "iconBorderB" : "iconBorder"}>
+            <img className={newGame? 'imgB' : "img"} alt={icon.id} src={require('../../' + icon.img.replace('./', ''))}></img>
            </div> 
            )
 }

@@ -49,6 +49,13 @@
     justify-content: center;
 }
 
+.block {
+  align-items: center;
+  margin: 2%;
+  justify-content: center;
+  min-width: 24%;
+}
+
 .Rules {
   float: right;
   cursor: pointer;
