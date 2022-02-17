@@ -20,3 +20,10 @@
     width: 164px;
     margin: 0 4%;
 }
+
+@media only screen and (min-width: 1200px) {
+    .resDiv {
+      width: 164px;
+      margin: 0 1%;
+  }
+  }
